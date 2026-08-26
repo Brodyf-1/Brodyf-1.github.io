@@ -1,6 +1,7 @@
 body {
   margin: 0px;
-  background-color: #202737;
+  background-image: url(https://jooinn.com/images/ocean-40.jpg);
+  background-size: 1600px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,10 +9,11 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+  background-image: url(https://images.unsplash.com/photo-1650803321892-efba59b28a60?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGdyYWRpZW50JTIwYmx1ZXxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: 1600px;
   margin: 20px;
   border-radius: 15px;
-  border: 5px solid rgba(118, 0, 233, 0.375);
+  border: 5px solid rgba(255, 255, 255, 0.914);
 }
 
 img {
