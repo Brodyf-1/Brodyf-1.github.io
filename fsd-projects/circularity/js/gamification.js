@@ -113,7 +113,7 @@ var Gamification = (function () {
   function createPlayer1() {
     player1 = draw.randomCircleInArea(canvas, true, true, "#00FF00", 3);
     player1.radius = 15;
-    player1.scaleX = player1.scaleY = 1.5;
+    player1.scaleX = player1.scaleY = 1;
 
     // Set consistent start position
     player1.x = PLAYER_START_POSITIONS.player1.x;
@@ -584,12 +584,12 @@ function updatePlayer2() {
     // Calculate new size (area-based growth)
     var absorberArea = Math.PI * Math.pow(absorber.radius, 2);
     var absorbedArea = Math.PI * Math.pow(absorbed.radius || 10, 2);
-    var newArea = absorberArea + absorbedArea * 0.3; // Gain 30% of absorbed area for faster growth
+    var newArea = absorberArea + absorbedArea * 0.2; // Gain 30% of absorbed area for faster growth
     var newRadius = Math.sqrt(newArea / Math.PI);
 
     // Update absorber size
     absorber.radius = newRadius;
-    absorber.scaleX = absorber.scaleY = newRadius / 10;
+    absorber.scaleX = absorber.scaleY = newRadius / 15;
 
     // Remove absorbed circle (only if it's from the circles array)
     if (index >= 0) {
